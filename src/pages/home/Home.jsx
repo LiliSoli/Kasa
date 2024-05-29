@@ -17,7 +17,6 @@ function Home() {
                 {locationsList.map(location => (
                     <Link to={`/location/${location.id}`} key={location.id}>
                         <LocationCard 
-                        key={location.id} 
                         title={location.title}
                         cover={location.cover}
                         />
