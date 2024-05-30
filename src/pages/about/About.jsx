@@ -1,10 +1,26 @@
 import React from 'react';
+import Banner from '../../components/banner/Banner';
+import bannerAbout from '../../assets/images/banner-about.png';
+import CollapseItem from '../../components/collapseItem/CollapseItem';
+import aboutData from '../../datas/aboutData.json';
 
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <main>
+      <Banner 
+        imageUrl={bannerAbout}
+        altText="Paysage de montagnes"
+        bannerText=""
+      />
+
+      {aboutData.map((item, index) => (
+        <CollapseItem
+          key={index}
+          title={item.title}
+          description={item.description}
+        />
+      ))}
+    </main>
   );
 };
 

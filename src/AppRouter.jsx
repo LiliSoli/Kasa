@@ -6,7 +6,6 @@ import Home from './pages/home/Home';
 import Location from './pages/location/Location';
 import About from './pages/about/About';
 import Error from './pages/error/Error';
-// import { About, Error, Home, Location } from './pages';
 
 const AppRouter = () => {
   return (

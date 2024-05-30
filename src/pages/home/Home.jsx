@@ -7,10 +7,10 @@ import locationsList from '../../datas/logements.json';
 
 function Home() {
     return (
-        <>
+        <main>
             <Banner 
             imageUrl={bannerHome}
-            altText="Falaises au bord de la mer"
+            altText="Paysage de bord de mer"
             bannerText="Chez vous, partout et ailleurs"
             />
             <div className="location-list">
@@ -23,7 +23,7 @@ function Home() {
                    </Link> 
                 ))}
             </div>
-        </>
+        </main>
     )
 };
 
