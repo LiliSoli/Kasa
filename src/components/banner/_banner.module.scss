@@ -22,11 +22,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.6);
 
-        // &__about-page{
-        //     opacity: 0.3;
-        // }
+        &__home-page {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        &__about-page{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
 
         &__text{
             @include font-style(48px, 700);

@@ -75,7 +75,12 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.banner__overlay__home-page {
   background-color: rgba(0, 0, 0, 0.6);
+}
+.banner__overlay__about-page {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .banner__overlay__text {
   font-size: 48px;

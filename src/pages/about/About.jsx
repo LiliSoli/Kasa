@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <Banner
-        className="banner__overlay__about-page" 
+        isAboutPage
         imageUrl={bannerAbout}
         altText="Paysage de montagnes"
         bannerText=""
