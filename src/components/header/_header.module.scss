@@ -15,11 +15,11 @@
         @include display-flex;
         gap: 57px;
 
-        a{
+        &__nav-link{
             text-decoration: none;
             color: $black;
 
-            &:hover{
+            &.active {
                 text-decoration: underline;
             }
         }   

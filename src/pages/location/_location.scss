@@ -2,7 +2,7 @@
 @import '../../assets/styles/variables';
 
 .info-locations {
-    @include display-flex(row, space-between);
+    @include display-flex(row, space-between, flex-start);
 
     .info-tags {
         h1 {
