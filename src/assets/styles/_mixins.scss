@@ -2,7 +2,7 @@
 @mixin font-style($size, $weight) {
     font-size: $size;
     font-weight: $weight;
-    font-family: 'Monserrat'; 
+    font-family: "Montserrat", sans-serif;
 }
 
 @mixin display-flex($direction:row, $justify:center, $align:center){

@@ -13,7 +13,7 @@
 .header__nav {
   font-size: 24px;
   font-weight: 500;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -44,7 +44,7 @@
 .footer p {
   font-size: 24px;
   font-weight: 500;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
   margin: 29px 0 0 0;
 }
@@ -85,7 +85,7 @@
 .banner__overlay__text {
   font-size: 48px;
   font-weight: 700;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
   opacity: 1;
 }
@@ -107,7 +107,7 @@
 .card__text {
   font-size: 18px;
   font-weight: 700;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   width: calc(100% - 40px);
   color: #FFFFFF;
   padding: 0 20px 20px 20px;
@@ -134,7 +134,7 @@
 .slideshow__counter {
   font-size: 18px;
   font-weight: 500;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
   position: absolute;
   bottom: 25px;
@@ -166,7 +166,7 @@
 .info-locations .info-tags h1 {
   font-size: 36px;
   font-weight: 500;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   line-height: 51px;
   color: #FF6060;
   margin-top: 30px;
@@ -174,13 +174,13 @@
 .info-locations .info-tags p {
   font-size: 18px;
   font-weight: 500;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   margin: 0 0 20px 0;
 }
 .info-locations .info-tags span {
   font-size: 14px;
   font-weight: 700;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   padding: 5px 30px;
   margin-right: 10px;
   border-radius: 10px;
@@ -199,7 +199,7 @@
 .info-locations .host-rating .host__name {
   font-size: 18px;
   font-weight: 500;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,7 +242,7 @@
 .collapse-location .collapse-item__heading {
   font-size: 18px;
   font-weight: 700;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -255,7 +255,7 @@
 .collapse-location .collapse-item__content {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -300,7 +300,7 @@
 .collapse-about .collapse-item__heading {
   font-size: 24px;
   font-weight: 700;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -313,7 +313,7 @@
 .collapse-about .collapse-item__content {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Monserrat";
+  font-family: "Montserrat", sans-serif;
   padding: 16px 20px 20px 20px;
   margin: 0;
   border-radius: 5px;
