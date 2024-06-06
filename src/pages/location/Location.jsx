@@ -18,33 +18,35 @@ function Location() {
 
   return (
     <div>
-      <div>
         <Slideshow
           pictures={location.pictures}
-        />
-        
-        <LocationInfo
-          title={location.title}
-          location={location.location}
-        />
+          />
 
-        <Tags
-          tags={location.tags}
-        />
+      <div className="info-locations">
+        <div className="info-tags">
+          <LocationInfo
+            title={location.title}
+            location={location.location}
+          />
+
+          <Tags
+            tags={location.tags}
+          />
+        </div>
+
+        <div className="host-rating">
+          <Host
+            hostName={location.host.name}
+            hostPicture={location.host.picture}
+          />
+
+          <Rating
+            rating={location.rating}
+          />
+        </div>
       </div>
 
-      <div>
-        <Host       
-          hostName={location.host.name}
-          hostPicture={location.host.picture}
-        />
-
-        <Rating
-          rating={location.rating}
-        />
-      </div>
-
-      <div>
+      <div className="collapse-location">
         <CollapseItem
           title="Description"
           description={location.description}

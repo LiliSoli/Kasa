@@ -1,0 +1,42 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.slideshow {
+    width: 100%;
+    height: 415px;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__counter {
+        @include font-style(18px, 500);
+        color: $white;
+        position: absolute;
+        bottom: 25px;
+        position: absolute;
+
+    }
+
+    &__arrow {
+        width: 47px;
+        height: 79px;
+    }
+
+    &__arrow--left {
+        position: absolute;
+        left: 23px;
+        bottom: 180px;
+    }
+
+    &__arrow--right {
+        position: absolute;
+        right: 23px;
+        bottom: 180px;
+    }
+}

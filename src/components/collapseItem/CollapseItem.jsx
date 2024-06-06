@@ -8,10 +8,9 @@ function CollapseItem(props) {
         setIsOpen(!isOpen);
     };
 
-
     return (
         <div className="collapse-item">
-            <div className="collapse-heading">
+            <div className="collapse-item__heading">
                 <span>{props.title}</span>
                 <img
                     src={collapseIcon} alt="Flèche bas"
@@ -21,19 +20,19 @@ function CollapseItem(props) {
             </div>
 
             {isOpen && (
-                <div className="collapse-content">
+                <div className="collapse-item__content">
                     {props.description &&
                         <div>{props.description}</div>
                     }
     
                     {props.equipments &&
-                        <div>
+                        <>
                             {props.equipments.map((equipment, index) => (
-                            <p key={index}>
+                            <span key={index}>
                                 {equipment}
-                            </p>
+                            </span>
                             ))}
-                        </div>
+                        </>
                     }
                 </div>
             )}

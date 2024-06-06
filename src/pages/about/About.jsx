@@ -6,21 +6,24 @@ import aboutData from '../../datas/aboutData.json';
 
 const About = () => {
   return (
-    <main>
-      <Banner 
+    <>
+      <Banner
+        className="banner__overlay__about-page" 
         imageUrl={bannerAbout}
         altText="Paysage de montagnes"
         bannerText=""
       />
 
-      {aboutData.map((item, index) => (
-        <CollapseItem
-          key={index}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </main>
+      <div className="collapse-about">
+        {aboutData.map((item, index) => (
+          <CollapseItem
+            key={index}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 

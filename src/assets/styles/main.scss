@@ -1,0 +1,26 @@
+@import './mixins';
+@import '../../components/header/header.module';
+@import '../../components/footer/footer.module';
+@import '../../components/banner/banner.module';
+@import '../../components/location-card/locationCard.module';
+@import '../../components/location/slideshow/slideshow.module';
+@import '../../pages/location/location';
+@import '../../pages/home/home';
+@import '../../pages/about/about';
+
+body {
+    font-family: 'Montserrat';
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+
+    main{
+        padding:50px 100px 50px 100px;
+
+        h1, h2, h3, h4{
+            margin: 0;
+        }
+    }
+}

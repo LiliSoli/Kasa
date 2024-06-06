@@ -2,7 +2,7 @@ import React from 'react';
 
 function Tags(props) {
     return (
-        <div className="tags">
+        <div>
             {props.tags.map((tagItem, index) => (
                 <span key={index}>
                     {tagItem}

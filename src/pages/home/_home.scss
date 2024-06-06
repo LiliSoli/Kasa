@@ -1,0 +1,19 @@
+@import '../../assets/styles/variables';
+
+
+.location-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 60px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: $light-grey;
+    padding: 56px 50px 43px 50px;
+    margin-top: 50px;
+
+    a{
+        width: calc(33% - 220px);
+    }
+}

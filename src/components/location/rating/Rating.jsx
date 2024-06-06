@@ -16,7 +16,7 @@ function Rating(props) {
         return stars;
     };
 
-    return <div>{displayStars(rating)}</div>;
+    return <div className="rating">{displayStars(rating)}</div>;
 };
 
 export default Rating;
