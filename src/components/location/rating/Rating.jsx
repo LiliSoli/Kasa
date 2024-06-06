@@ -1,6 +1,5 @@
 import React from 'react';
-import activeStar from '../../../assets/images/star-active.png';
-import inactiveStar from '../../../assets/images/star-inactive.png';
+import { FaStar } from "react-icons/fa";
 
 function Rating(props) {
     const rating = props.rating;
@@ -9,7 +8,7 @@ function Rating(props) {
         for (let i = 1; i <= 5; i++) {
             stars.push(
                 <span key={i}>
-                    {i < rating ? <img src={activeStar} alt="étoile pleine" /> : <img src={inactiveStar} alt="étoile vide" /> }
+                    {i < rating ? <FaStar className="active-star"/> : <FaStar className="inactive-star"/> }
                 </span>
             )
         }

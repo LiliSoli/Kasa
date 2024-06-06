@@ -194,6 +194,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 10px;
 }
 .info-locations .host-rating .host__name {
   font-size: 18px;
@@ -211,8 +212,20 @@
   border-radius: 50px;
 }
 .info-locations .host-rating .rating {
-  width: 196px;
-  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 27px;
+}
+.info-locations .host-rating .rating .active-star {
+  font-size: 24px;
+  color: #FF6060;
+}
+.info-locations .host-rating .rating .inactive-star {
+  font-size: 24px;
+  color: #E3E3E3;
 }
 
 .collapse-location {
