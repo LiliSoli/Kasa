@@ -133,7 +133,8 @@
   color: #FFFFFF;
   position: absolute;
   bottom: 25px;
-  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .slideshow__arrow {
   width: 47px;

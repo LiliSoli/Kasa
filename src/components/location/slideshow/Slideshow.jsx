@@ -25,19 +25,23 @@ function Slideshow({ pictures }) {
         {position + 1}/{pictures.length}
       </div>
 
-      <div
-        className="slideshow__arrow slideshow__arrow--left"
-        onClick={() => arrowClick("left")}
-      >
-        <img src={arrowLeft} alt="Left arrow" />
-      </div>
+      {pictures.length > 1 && 
+        <>
+          <div
+            className="slideshow__arrow slideshow__arrow--left"
+            onClick={() => arrowClick("left")}
+          >
+            <img src={arrowLeft} alt="Left arrow" />
+          </div>
 
-      <div
-        className="slideshow__arrow slideshow__arrow--right"
-        onClick={() => arrowClick("right")}
-      >
-        <img src={arrowRight} alt="Right arrow" />
-      </div>
+          <div
+            className="slideshow__arrow slideshow__arrow--right"
+            onClick={() => arrowClick("right")}
+          >
+            <img src={arrowRight} alt="Right arrow" />
+          </div>
+        </> 
+        }
     </div>
   );
 }
