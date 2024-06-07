@@ -7,6 +7,7 @@
 @import '../../pages/location/location';
 @import '../../pages/home/home';
 @import '../../pages/about/about';
+@import '../../pages/error/error';
 
 body {
     font-family: 'Montserrat';
@@ -17,7 +18,7 @@ body {
     box-sizing: border-box;
 
     main{
-        padding:50px 100px 50px 100px;
+        padding:50px 100px 0px 100px;
 
         h1, h2, h3, h4{
             margin: 0;

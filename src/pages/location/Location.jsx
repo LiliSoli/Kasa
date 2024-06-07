@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Error from '../error/Error';
 import Slideshow from '../../components/location/slideshow/Slideshow';
 import LocationInfo from '../../components/location/location-info/LocationInfo';
 import Tags from '../../components/location/tags/Tags';
@@ -13,11 +14,11 @@ function Location() {
   const location = locationsList.find(location => location.id === id);
 
   if (!location) {
-    return <div>Logement non trouvé</div>;
+    return <Error />;
   }
 
   return (
-    <div>
+    <div className="location-page">
         <Slideshow
           pictures={location.pictures}
           />

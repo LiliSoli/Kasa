@@ -1,20 +1,20 @@
-// @import '../../assets/styles/mixins';
+@import '../../assets/styles/mixins';
 @import '../../assets/styles/variables';
 
 .collapse-about {
     @include display-flex(column);
     gap: 30px;
-    padding-top: 24px;
+    margin: 38px 0;
 
     .collapse-item {
         width: 80%;
-        
+
         &__heading {
             @include font-style(24px, 700);
             @include display-flex(row, space-between);
             color: white;
             background-color: $primary-color;
-            border-radius: 5px; 
+            border-radius: 5px;
             padding: 9px 24px 9px 15px;
         }
 
@@ -24,6 +24,21 @@
             margin: 0;
             border-radius: 5px;
             background-color: $light-grey;
+        }
+
+        .collapse-icon {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+
+            &.open {
+                transform: rotate(-180deg);
+            }
+
+            &.close {
+                transform: rotate(0deg);
+            }
         }
     }
 }

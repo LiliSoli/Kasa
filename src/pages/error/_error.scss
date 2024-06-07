@@ -1,0 +1,25 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.error-page {
+    @include display-flex(column);
+    gap: 139px;
+    margin: 89px 0 139px 0;
+
+    &__title {
+        @include font-style(288px, 700);
+        color: $primary-color;
+        margin: 0;
+    }
+
+    &__subtitle{
+        @include font-style(36px, 500);
+        color: $primary-color;
+        margin: 0;
+    }
+
+    &__link{
+        @include font-style(18px, 500);
+        color: $black;
+    }
+}

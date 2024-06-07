@@ -14,7 +14,7 @@ function CollapseItem(props) {
                 <span>{props.title}</span>
                 <img
                     src={collapseIcon} alt="Flèche bas"
-                    className={`collapse-icon ${isOpen ? "open" : ""}`}
+                    className={`collapse-icon ${isOpen ? "open" : "close"}`}
                     onClick={activeCollapse}
                 />
             </div>
