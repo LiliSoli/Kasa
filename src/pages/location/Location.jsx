@@ -8,6 +8,7 @@ import Host from '../../components/location/host/Host';
 import Rating from '../../components/location/rating/Rating';
 import CollapseItem from '../../components/collapseItem/CollapseItem';
 import locationsList from '../../datas/logements.json';
+import './_location.scss';
 
 function Location() {
   const { id } = useParams();
@@ -24,7 +25,7 @@ function Location() {
           />
 
       <div className="info-locations">
-        <div className="info-tags">
+        <div>
           <LocationInfo
             title={location.title}
             location={location.location}

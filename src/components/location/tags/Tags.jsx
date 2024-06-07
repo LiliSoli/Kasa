@@ -1,8 +1,9 @@
 import React from 'react';
+import './_tags.scss';
 
 function Tags(props) {
     return (
-        <div>
+        <div className='tags'>
             {props.tags.map((tagItem, index) => (
                 <span key={index}>
                     {tagItem}

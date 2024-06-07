@@ -1,4 +1,5 @@
 import React from 'react';
+import './_banner.scss';
 
 function Banner(props) {
   const backgroundOpacity = props.isAboutPage ? "banner__overlay__about-page" : "banner__overlay__home-page";

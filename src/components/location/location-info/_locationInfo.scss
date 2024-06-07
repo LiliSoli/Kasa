@@ -1,0 +1,25 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.location-info{
+    h1 {
+        @include font-style(36px, 500);
+        line-height: 51px;
+        color: $primary-color;
+        margin-top: 30px;
+    }
+    
+    p {
+        @include font-style(18px, 500);
+        margin: 0 0 20px 0;
+    }
+    
+    span {
+        @include font-style(14px, 700);
+        padding: 5px 30px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: $white;
+    }
+}

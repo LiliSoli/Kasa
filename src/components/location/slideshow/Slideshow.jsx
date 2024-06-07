@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import arrowLeft from '../../../assets/images/arrow-left.png';
 import arrowRight from '../../../assets/images/arrow-right.png';
+import './_slideshow.scss';
 
 function Slideshow({ pictures }) {
   const [position, setPosition] = useState(0);

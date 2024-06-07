@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import collapseIcon from '../../assets/images/collapse-icon.png';
+import './_collapse-item.scss';
 
 function CollapseItem(props) {
     const [isOpen, setIsOpen] = useState(false);

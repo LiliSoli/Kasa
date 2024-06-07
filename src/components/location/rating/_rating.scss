@@ -1,0 +1,19 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.rating {
+    @include display-flex(row, flex-end);
+    gap: 10px;
+    margin-top: 21px;
+
+    .active-star {
+        font-size: 24px;
+        color: $primary-color;
+    }
+
+    .inactive-star {
+        font-size: 24px;
+        color: $grey-star;
+    }
+
+}

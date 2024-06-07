@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaStar } from "react-icons/fa";
+import './_rating.scss';
 
 function Rating(props) {
     const rating = props.rating;

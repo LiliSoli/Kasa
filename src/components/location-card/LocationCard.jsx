@@ -1,4 +1,5 @@
 import React from 'react';
+import './_locationCard.scss';
 
 function LocationCard(props) {
   return (

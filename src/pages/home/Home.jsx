@@ -4,6 +4,7 @@ import bannerHome from '../../assets/images/banner-home.png';
 import { Link } from 'react-router-dom';
 import LocationCard from '../../components/location-card/LocationCard';
 import locationsList from '../../datas/logements.json';
+import './_home.scss';
 
 function Home() {
     return (

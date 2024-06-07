@@ -1,0 +1,13 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.tags {
+    span {
+        @include font-style(14px, 700);
+        padding: 5px 30px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: $white;
+    }
+}

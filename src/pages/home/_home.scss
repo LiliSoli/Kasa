@@ -1,7 +1,7 @@
+@import '../../assets/styles/mixins';
 @import '../../assets/styles/variables';
 
-
-.location-list{
+.location-list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,7 +13,23 @@
     padding: 56px 50px 43px 50px;
     margin: 50px 0;
 
-    a{
+    a {
         width: calc(33% - 220px);
+    }
+}
+
+/*********************Media query mobile**********************/
+@media screen and (max-width: 768px) {
+    .location-list {
+        @include display-flex(column);
+        gap: 20px;
+        background-color: $white;
+        padding: 0;
+        margin-top: 22px;
+        margin-bottom: 27px;
+
+        a{
+            width: 100%;
+        }
     }
 }

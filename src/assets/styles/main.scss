@@ -1,14 +1,3 @@
-@import './mixins';
-@import '../../components/header/header.module';
-@import '../../components/footer/footer.module';
-@import '../../components/banner/banner.module';
-@import '../../components/location-card/locationCard.module';
-@import '../../components/location/slideshow/slideshow.module';
-@import '../../pages/location/location';
-@import '../../pages/home/home';
-@import '../../pages/about/about';
-@import '../../pages/error/error';
-
 body {
     font-family: 'Montserrat';
     max-width: 1440px;
@@ -17,10 +6,15 @@ body {
     margin: auto;
     box-sizing: border-box;
 
-    main{
-        padding:50px 100px 0px 100px;
+    main {
+        padding: 50px 100px 0px 100px;
 
-        h1, h2, h3, h4{
+        /**********Media query mobile***********/
+        @media screen and (max-width: 768px) {
+            padding: 0 20px;
+        }
+
+        h1, h2, h3, h4 {
             margin: 0;
         }
     }

@@ -6,7 +6,7 @@ import Home from './pages/home/Home';
 import Location from './pages/location/Location';
 import About from './pages/about/About';
 import Error from './pages/error/Error';
-import './assets/styles/main.css';
+import './assets/styles/main.scss';
 
 const App = () => {
   return (
