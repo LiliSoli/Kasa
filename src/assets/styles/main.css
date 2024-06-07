@@ -87,7 +87,7 @@
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
-  opacity: 1;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000;
 }
 
 /*****Colors*****/
