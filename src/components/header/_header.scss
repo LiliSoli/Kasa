@@ -24,9 +24,12 @@
             }
         }
     }
+}
 
-    /*********************Media query mobile**********************/
-    @media screen and (max-width: 768px) {
+
+/****************Media query mobile*****************/
+@media screen and (max-width: 768px) {
+    .header {
         padding: 20px;
 
         &__logo {
@@ -39,9 +42,18 @@
             gap: 26px;
 
             &__nav-link {
-                text-transform: uppercase; 
-
+                text-transform: uppercase;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .header {
+
+        &__logo {
+            width: 40%;
+            height: auto;
         }
     }
 }

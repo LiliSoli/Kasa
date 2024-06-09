@@ -9,12 +9,20 @@ body {
     main {
         padding: 50px 100px 0px 100px;
 
+        /**********Media query tablet***********/
+        @media screen and (max-width: 1024px) {
+            padding: 30px 40px 0 40px;
+        }
+
         /**********Media query mobile***********/
         @media screen and (max-width: 768px) {
             padding: 0 20px;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             margin: 0;
         }
     }

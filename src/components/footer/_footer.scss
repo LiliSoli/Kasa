@@ -13,7 +13,30 @@
 
     p {
         @include font-style(24px, 500);
+        text-align: center;
         color: $white;
         margin: 29px 0 0 0;
+    }
+}
+
+/*******Media Query Tablet*******/
+@media screen and (max-width: 1024px) {
+    .footer {
+        p {
+            @include font-style(18px, 500);
+        }
+    }
+}
+
+/************Media query mobile************/
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 66px 120px 58px 120px;
+
+        p {
+            @include font-style(12px, 500);
+            line-height: 17px;
+            margin: 20px 0 0 0;
+        }
     }
 }
