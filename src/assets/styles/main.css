@@ -1,0 +1,29 @@
+body {
+  font-family: "Montserrat";
+  max-width: 1440px;
+  min-width: 320px;
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+body main {
+  padding: 50px 100px 0px 100px;
+  /**********Media query tablet***********/
+  /**********Media query mobile***********/
+}
+@media screen and (max-width: 1024px) {
+  body main {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main {
+    padding: 0 20px;
+  }
+}
+body main h1,
+body main h2,
+body main h3,
+body main h4 {
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

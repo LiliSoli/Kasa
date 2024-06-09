@@ -7,6 +7,7 @@
     &__heading {
         @include font-style(18px, 700);
         @include display-flex(row, space-between);
+        line-height: 34px;
         color: white;
         background-color: $primary-color;
         border-radius: 10px;
@@ -38,7 +39,6 @@
         margin: 0;
         border-radius: 5px;
         background-color: $light-grey;
-
         opacity: 0;
         max-height: 0;
         overflow: hidden;
@@ -59,6 +59,24 @@
             margin-bottom: -35px;
             transform: translateY(-50px);
             transition: max-height 0.5s ease, margin-bottom 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+        }
+    }
+}
+
+/****************Media query mobile*****************/
+@media screen and (max-width: 768px) {
+    .collapse-item {
+        width: 100%;
+
+        &__heading {
+            @include font-style(13px, 700);
+            line-height: 18px;
+            border-radius: 5px;
+        }
+
+        &__content {
+            @include font-style(13px, 400);
+            line-height: 17px;
         }
     }
 }
