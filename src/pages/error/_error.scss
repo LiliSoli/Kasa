@@ -40,7 +40,7 @@
             @include font-style(28px, 500);
             color: $primary-color;
             margin: 0;
-                        text-align: center;
+            text-align: center;
         }
 
         &__link {
@@ -62,9 +62,8 @@
 
         &__subtitle {
             @include font-style(18px, 500);
-            margin-left: min(57px);
-            margin-right: min(57px);
             text-align: center;
+            white-space: pre-wrap;
         }
 
         &__link {

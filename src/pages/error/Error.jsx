@@ -5,14 +5,10 @@ import './_error.scss';
 const Error = () => {
 
   const isMobile = window.innerWidth <= 425;
-  const errorSubtitle = isMobile ? (
-    <>
-      Oups! La page que <br />
-      vous demandez n'existe pas.
-    </>
-  ) : (
-    "Oups! La page que vous demandez n'existe pas."
-  );
+  const errorSubtitle = isMobile ? 
+    "Oups! La page que \nvous demandez n'existe pas."
+    : 
+    "Oups! La page que vous demandez n'existe pas.";
   
   return (
     <div className="error-page">
