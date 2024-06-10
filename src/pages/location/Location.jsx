@@ -25,7 +25,7 @@ function Location() {
           />
 
       <div className="info-locations">
-        <div>
+        <div className="info-locations__location">
           <LocationInfo
             title={location.title}
             location={location.location}

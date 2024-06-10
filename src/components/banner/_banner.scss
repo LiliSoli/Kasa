@@ -67,10 +67,10 @@
 @media screen and (max-width: 425px) {
     .banner__overlay {
         justify-content: flex-start;
-        padding-left: 16px;
-
-
+        
+        
         &__text {
+            padding-left: 16px;
             white-space: pre-wrap;
         }
     }

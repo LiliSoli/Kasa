@@ -11,3 +11,22 @@
         color: $white;
     }
 }
+
+/****************Media query tablet*****************/
+@media screen and (max-width: 1024px) {}
+
+/****************Media query mobile*****************/
+@media screen and (max-width: 768px) {
+    .tags {
+        @include display-flex(row, flex-start); 
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 10px;
+
+        span {
+            @include font-style(10px, 700);
+            line-height: 19px;
+            padding: 2px 27px;
+        }
+    }
+}

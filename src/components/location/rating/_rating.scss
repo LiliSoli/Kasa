@@ -17,3 +17,24 @@
     }
 
 }
+
+/****************Media query tablet*****************/
+@media screen and (max-width: 1024px) {}
+
+/****************Media query mobile*****************/
+@media screen and (max-width: 768px) {
+.rating {
+        @include display-flex(row, flex-start);
+        gap: 4px;
+        margin-top: 0;
+
+        .active-star {
+            font-size: 13px;
+        }
+
+        .inactive-star {
+            font-size: 13px;
+        }
+
+    }
+}

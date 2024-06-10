@@ -1,25 +1,51 @@
 @import '../../../assets/styles/mixins';
 @import '../../../assets/styles/variables';
 
-.location-info{
+.location-info {
     h1 {
         @include font-style(36px, 500);
         line-height: 51px;
         color: $primary-color;
         margin-top: 30px;
     }
-    
+
     p {
         @include font-style(18px, 500);
         margin: 0 0 20px 0;
     }
+}
+
+/****************Media query tablet*****************/
+@media screen and (max-width: 1024px) {
+    .location-info {
+            h1 {
+                @include font-style(28px, 500);
+                line-height: 40px;
+                margin-top: 20px;
+            }
     
-    span {
-        @include font-style(14px, 700);
-        padding: 5px 30px;
-        margin-right: 10px;
-        border-radius: 10px;
-        background-color: $primary-color;
-        color: $white;
+            p {
+                @include font-style(18px, 500);
+            }
+        }
+}
+
+/****************Media query mobile*****************/
+@media screen and (max-width: 768px) {
+    .location-info {
+        width: 100%;
+
+        h1 {
+            @include font-style(18px, 500);
+            line-height: 25px;
+            color: $primary-color;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            @include font-style(14px, 500);
+            margin: 0 0 10px 0;
+        }
     }
 }

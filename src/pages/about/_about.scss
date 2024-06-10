@@ -48,8 +48,7 @@
 
             &__heading {
                 @include font-style(13px, 700);
-                line-height: 0px;
-                color: black;
+                line-height: 10px;
             }
 
             &__content {

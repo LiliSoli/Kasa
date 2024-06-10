@@ -12,14 +12,63 @@
         margin: 0;
     }
 
-    &__subtitle{
+    &__subtitle {
         @include font-style(36px, 500);
         color: $primary-color;
         margin: 0;
     }
 
-    &__link{
+    &__link {
         @include font-style(18px, 500);
         color: $black;
+    }
+}
+
+/****************Media query tablet/laptop*****************/
+@media screen and (max-width: 1024px) {
+    .error-page {
+        gap: 139px;
+        margin: 89px 0 139px 0;
+
+        &__title {
+            @include font-style(192px, 700);
+            color: $primary-color;
+            margin: 0;
+        }
+
+        &__subtitle {
+            @include font-style(28px, 500);
+            color: $primary-color;
+            margin: 0;
+                        text-align: center;
+        }
+
+        &__link {
+            @include font-style(18px, 500);
+            color: $black;
+        }
+    }
+}
+
+/*********************Media query mobile*******************/
+@media screen and (max-width: 768px) {
+    .error-page {
+        gap: 113px;
+        margin: 93px 0;
+
+        &__title {
+            @include font-style(96px, 700);
+        }
+
+        &__subtitle {
+            @include font-style(18px, 500);
+            margin-left: min(57px);
+            margin-right: min(57px);
+            text-align: center;
+        }
+
+        &__link {
+            @include font-style(14px, 500);
+        }
     }
 }

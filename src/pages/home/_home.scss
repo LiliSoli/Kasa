@@ -18,7 +18,7 @@
     }
 }
 
-/*********************Media query mobile**********************/
+/****************Media query tablet/laptop*****************/
 @media screen and (max-width: 1024px) {
     .location-list {
         grid-template-columns: repeat(2, 1fr);
@@ -29,6 +29,7 @@
     }
 }
 
+/*********************Media query mobile*******************/
 @media screen and (max-width: 768px) {
     .location-list {
         @include display-flex(column);

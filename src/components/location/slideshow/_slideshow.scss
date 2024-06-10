@@ -42,13 +42,39 @@
 }
 
 /****************Media query tablet*****************/
-@media screen and (max-width: 1024px) {
-
-}
+@media screen and (max-width: 1024px) {}
 
 /****************Media query mobile*****************/
 @media screen and (max-width: 768px) {
-.slideshow {
-    height: 255px;
-}
+    .slideshow {
+        height: 255px;
+        margin-top: 7px;
+
+        &__counter {
+            display: none;
+        }
+
+        &__arrow {
+            @include display-flex;
+            width: 24px;
+            height: 24px;
+
+            img{
+                width: 12px;
+                height: 20px;
+            }           
+        }
+
+        &__arrow--left {
+            position: absolute;
+            left: 0px;
+            bottom: 117px;
+        }
+
+        &__arrow--right {
+            position: absolute;
+            right: 0px;
+            bottom: 117px;
+        }
+    }
 }
