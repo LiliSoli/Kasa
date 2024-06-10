@@ -12,14 +12,14 @@
         &__heading {
             @include font-style(24px, 700);
             border-radius: 5px;
-
         }
     }
 }
 
-/****************Media query tablet*****************/
+/****************Media query tablet/laptop*****************/
 @media screen and (max-width: 1024px) {
     .collapse-about {
+
         .collapse-item {
 
             &__heading {
@@ -33,7 +33,6 @@
                 line-height: 25px;
             }
         }
-
     }
 }
 

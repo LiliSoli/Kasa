@@ -20,9 +20,9 @@ function Location() {
 
   return (
     <div className="location-page">
-        <Slideshow
-          pictures={location.pictures}
-          />
+      <Slideshow
+        pictures={location.pictures}
+      />
 
       <div className="info-locations">
         <div className="info-locations__location">
@@ -53,6 +53,7 @@ function Location() {
           title="Description"
           description={location.description}
         />
+        
         <CollapseItem
           title="Équipements"
           equipments={location.equipments}

@@ -40,7 +40,7 @@
 }
 
 
-/*******Media Query Tablet*******/
+/*******Media query tablet/laptop*******/
 @media screen and (max-width: 1024px) {
     .banner__overlay__text {
         font-size: 32px;
@@ -67,7 +67,6 @@
 @media screen and (max-width: 425px) {
     .banner__overlay {
         justify-content: flex-start;
-
 
         &__text {
             padding-left: 16px;

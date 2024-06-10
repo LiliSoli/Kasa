@@ -42,7 +42,7 @@ function Slideshow({ pictures }) {
             <img src={arrowRight} alt="Right arrow" />
           </div>
         </> 
-        }
+      }
     </div>
   );
 }

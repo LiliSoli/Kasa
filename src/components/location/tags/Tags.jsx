@@ -10,7 +10,7 @@ function Tags(props) {
                 </span>
             ))}
         </div>
-  )
+    )
 };
 
 export default Tags;

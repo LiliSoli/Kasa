@@ -15,15 +15,12 @@
         font-size: 24px;
         color: $grey-star;
     }
-
 }
 
-/****************Media query tablet*****************/
-@media screen and (max-width: 1024px) {}
 
 /****************Media query mobile*****************/
 @media screen and (max-width: 768px) {
-.rating {
+    .rating {
         @include display-flex(row, flex-start);
         gap: 4px;
         margin-top: 0;
@@ -35,6 +32,5 @@
         .inactive-star {
             font-size: 13px;
         }
-
     }
 }

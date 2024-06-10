@@ -7,7 +7,7 @@ function LocationInfo(props) {
             <h1>{props.title}</h1>
             <p>{props.location}</p>
         </div>
-  )
+    )
 };
 
 export default LocationInfo;

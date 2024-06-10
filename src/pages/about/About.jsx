@@ -5,7 +5,7 @@ import CollapseItem from '../../components/collapseItem/CollapseItem';
 import aboutData from '../../datas/aboutData.json';
 import './_about.scss';
 
-const About = () => {
+function About() {
   return (
     <>
       <Banner

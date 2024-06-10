@@ -17,16 +17,13 @@
     img {
         width: 64px;
         border-radius: 50px;
-
     }
 }
 
-/****************Media query tablet*****************/
-@media screen and (max-width: 1024px) {}
 
 /****************Media query mobile*****************/
 @media screen and (max-width: 768px) {
-.host {
+    .host {
 
         &__name {
             @include font-style(12px, 500);
@@ -35,7 +32,6 @@
         img {
             width: 32px;
             border-radius: 50px;
-
         }
     }
 }

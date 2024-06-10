@@ -14,7 +14,7 @@ function Host(props) {
             </div>
             <img src={props.hostPicture} alt="avatar de l'hôte" />
         </div>
-  )
+    )
 };
 
 export default Host;

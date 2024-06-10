@@ -41,8 +41,6 @@
     }
 }
 
-/****************Media query tablet*****************/
-@media screen and (max-width: 1024px) {}
 
 /****************Media query mobile*****************/
 @media screen and (max-width: 768px) {
@@ -59,10 +57,10 @@
             width: 24px;
             height: 24px;
 
-            img{
+            img {
                 width: 12px;
                 height: 20px;
-            }           
+            }
         }
 
         &__arrow--left {

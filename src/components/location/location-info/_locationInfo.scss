@@ -15,19 +15,20 @@
     }
 }
 
-/****************Media query tablet*****************/
+
+/*************Media query tablet/laptop*************/
 @media screen and (max-width: 1024px) {
     .location-info {
-            h1 {
-                @include font-style(28px, 500);
-                line-height: 40px;
-                margin-top: 20px;
-            }
-    
-            p {
-                @include font-style(18px, 500);
-            }
+        h1 {
+            @include font-style(28px, 500);
+            line-height: 40px;
+            margin-top: 20px;
         }
+
+        p {
+            @include font-style(18px, 500);
+        }
+    }
 }
 
 /****************Media query mobile*****************/

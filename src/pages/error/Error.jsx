@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './_error.scss';
 
-const Error = () => {
+function Error() {
 
   const isMobile = window.innerWidth <= 425;
-  const errorSubtitle = isMobile ? 
+  const errorSubtitle = isMobile ?
     "Oups! La page que \nvous demandez n'existe pas."
     : 
     "Oups! La page que vous demandez n'existe pas.";

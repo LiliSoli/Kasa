@@ -12,13 +12,11 @@
     }
 }
 
-/****************Media query tablet*****************/
-@media screen and (max-width: 1024px) {}
 
 /****************Media query mobile*****************/
 @media screen and (max-width: 768px) {
     .tags {
-        @include display-flex(row, flex-start); 
+        @include display-flex(row, flex-start);
         flex-wrap: wrap;
         margin: 0;
         gap: 10px;

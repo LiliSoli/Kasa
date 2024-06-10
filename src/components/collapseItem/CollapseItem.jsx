@@ -15,8 +15,7 @@ function CollapseItem(props) {
                 <div className="collapse-item__heading__title">
                     <span>{props.title}</span>
                 </div>
-                <div className="collapse-item__heading__icon-content"
-                    onClick={activeCollapse}>
+                <div className="collapse-item__heading__icon-content" onClick={activeCollapse}>
                     <img
                         src={collapseIcon} alt="Flèche bas"
                         className={`collapse-icon ${isOpen ? "open" : "close"}`}
@@ -24,9 +23,7 @@ function CollapseItem(props) {
                 </div>
             </div>
 
-            <div
-                className={`collapse-item__content ${isOpen ? "open" : "close"}`}
-            >
+            <div className={`collapse-item__content ${isOpen ? "open" : "close"}`}>
                 {props.description &&
                     <div className={`collapse-item__content__text ${isOpen ? "open" : "close"}`}>
                         {props.description}
@@ -36,15 +33,16 @@ function CollapseItem(props) {
                 {props.equipments &&
                     <div className={`collapse-item__content__text ${isOpen ? "open" : "close"}`}>
                         {props.equipments.map((equipment, index) => (
-                        <span key={index}>
-                            {equipment}
-                        </span>
-                        ))}
+                            <span key={index}>
+                                {equipment}
+                            </span>
+                            ))
+                        }
                     </div>
                 }
             </div>
         </div>
-  )
+    )
 };
 
 export default CollapseItem;

@@ -10,16 +10,17 @@ function Home() {
     return (
         <>
             <Banner 
-            imageUrl={bannerHome}
-            altText="Paysage de bord de mer"
-            bannerText="Chez vous, partout et ailleurs"
+                imageUrl={bannerHome}
+                altText="Paysage de bord de mer"
+                bannerText="Chez vous, partout et ailleurs"
             />
+
             <div className="location-list">
                 {locationsList.map(location => (
                     <Link to={`/location/${location.id}`} key={location.id}>
                         <LocationCard 
-                        title={location.title}
-                        cover={location.cover}
+                            title={location.title}
+                            cover={location.cover}
                         />
                    </Link> 
                 ))}
