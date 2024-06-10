@@ -7,71 +7,110 @@
     &__heading {
         @include font-style(18px, 700);
         @include display-flex(row, space-between);
-        line-height: 34px;
+        line-height: 32px;
         color: white;
         background-color: $primary-color;
         border-radius: 10px;
-        padding: 10px;
         position: relative;
         z-index: 1;
 
-        .collapse-icon {
-            display: flex;
-            align-items: center;
+        &__title {
+            padding: 10px 0px 10px 15px;
+        }
+
+        &__icon-content {
+            @include display-flex;
+            padding: 18px 20px 19px 20px;
             cursor: pointer;
-            transition: transform 0.3s ease-in-out;
 
-            &.open {
-                transform: rotate(-180deg);
-            }
+            .collapse-icon {
+                height: 15px;
+                transition: transform 0.3s ease-in-out;
 
-            &.close {
-                transform: rotate(0deg);
+                &.open {
+                    transform: rotate(-180deg);
+                }
+
+                &.close {
+                    transform: rotate(0deg);
+                }
             }
         }
     }
 
     &__content {
         @include font-style(18px, 400);
-        @include display-flex(column, flex-start, flex-start);
         line-height: 25px;
-        padding: 16px 20px 20px 20px;
         margin: 0;
         border-radius: 5px;
-        background-color: $light-grey;
         opacity: 0;
-        max-height: 0;
         overflow: hidden;
         position: relative;
         z-index: 0;
+        transition:
+            max-height 0.4s ease-in-out,
+            opacity 0.4s ease-in-out,
+            transform 0.4s ease-in-out;
 
         &.open {
             opacity: 1;
-            max-height: fit-content;
-            margin-bottom: 0px;
+            max-height: 1000px;
             transform: translateY(0);
-            transition: max-height 0.5s ease, margin-bottom 0.5s ease, opacity 0.4s ease 0.15s, transform 0.2s ease 0.15s;
         }
 
         &.close {
             opacity: 0;
             max-height: 0;
-            margin-bottom: -35px;
-            transform: translateY(-50px);
-            transition: max-height 0.5s ease, margin-bottom 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+            transform: translateY(-10px);
+        }
+
+        &__text {
+            @include display-flex(column, flex-start, flex-start);
+            padding: 16px 20px 20px 20px;
+            background-color: $light-grey;
+            max-height: 0;
+            transition:
+                max-height 0.4s ease-in-out,
+                opacity 0.4s ease-in-out,
+                transform 0.4s ease-in-out;
+
+            &.open {
+                opacity: 1;
+                max-height: 1000px;
+                transform: translateY(0);
+            }
+
+            &.close {
+                opacity: 0;
+                max-height: 0;
+                transform: translateY(-10px);
+            }
         }
     }
 }
 
-/****************Media query mobile*****************/
+// /****************Media query mobile*****************/
 @media screen and (max-width: 768px) {
     .collapse-item {
         width: 100%;
 
         &__heading {
             @include font-style(13px, 700);
-            line-height: 18px;
             border-radius: 5px;
+
+            &__title {
+                padding: 9px 0px 9px 10px;
+            }
+
+            &__icon-content {
+                @include display-flex;
+                padding: 9px 10px 9px 10px;
+                cursor: pointer;
+
+                .collapse-icon {
+                    height: 9px;
+                }
+            }
         }
 
         &__content {

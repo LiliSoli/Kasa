@@ -40,3 +40,15 @@
         bottom: 180px;
     }
 }
+
+/****************Media query tablet*****************/
+@media screen and (max-width: 1024px) {
+
+}
+
+/****************Media query mobile*****************/
+@media screen and (max-width: 768px) {
+.slideshow {
+    height: 255px;
+}
+}
